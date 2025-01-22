@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+service QuestionService{
+    rpc get (questionTitle) returns (questionList) {};
+    rpc getAll (Empty) returns (questionList) {};
+}
+
+message Empty{}
+
+message Question {
+    string type = 1;
+    string title = 2;
+}
+
+message questionList {
+    repeated Question question = 1;
+    int32 total = 2;
+}
+
+message questionTitle {
+    string title = 1;
+    string type = 2;
+    int32 page = 3;
+}

@@ -1,0 +1,15 @@
+.container{
+    margin: 20px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .prevB{
+        display: none;
+    }
+
+    .prevN{
+        display: none;
+    }
+
+}

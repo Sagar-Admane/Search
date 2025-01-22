@@ -1,0 +1,103 @@
+.container{
+    margin: 12px 120px;
+    // background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.search{
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    background-color: #F2F4F8;
+    padding: 12px;
+    gap: 12px;
+    border-radius: 8px;
+    width: 80%;
+
+    input{
+        background-color: transparent;
+        border: transparent;
+    }
+}
+
+input::placeholder{
+    font-weight: bold;
+    color: black;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    // background-color: yellow;
+    width: 100%;
+}
+
+select:focus, select:hover{
+    background-color: white;
+}
+
+input:focus{
+    outline: none;
+    border: none;
+}
+
+select{
+    border-radius: 8px;
+    padding: 17px;
+    width: 20%;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 17px;
+    width: 10%;
+    border-radius: 8px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+
+    .logo{
+        display: none;
+    }
+
+}
+
+.h1{
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.container1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+    
+    p{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width : 850px) {
+    button .logo{
+        color: white;
+        display: block;
+    }
+
+    .searchText{
+        display: none;
+    }
+}
